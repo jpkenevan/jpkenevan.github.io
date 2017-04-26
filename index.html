@@ -1,6 +1,18 @@
-<!DOCTYPE html>
-  <head>
-  </head>
+<html>
+    <head>
+  <link rel="manifest" href="./manifest.json">
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+  <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(["init", {
+      appId: "819b5abe-40fc-4280-bed7-4a8650844c46",
+      autoRegister: false,
+      notifyButton: {
+        enable: true /* Set to false to hide */
+      }
+    }]);
+  </script>
+</head>
   <body>
     <h1>Hello World!</h1>
   </body>
